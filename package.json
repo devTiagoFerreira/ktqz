@@ -1,0 +1,20 @@
+{
+  "name": "ktqz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron ."
+  },
+  "author": "Tiago C Ferreira",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "electron": "^30.0.1",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "git-commit-msg-linter": "^5.0.7"
+  }
+}
