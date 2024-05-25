@@ -1,0 +1,19 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1225px) {
+  .card-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card-container {
+    width: 100%;
+  }
+}

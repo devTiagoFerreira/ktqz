@@ -1,0 +1,53 @@
+#student-table_wrapper input[type="search"]:focus {
+  outline: none;
+}
+
+#student-table_wrapper input[type="search"] {
+  width: 20%;
+}
+
+#student-table_wrapper input[type="search"]::-webkit-search-cancel-button {
+  background-image: url('../../assets/icons/close.svg');
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+#student-table_wrapper .dt-search  {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#student-table {
+  margin-top: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#student-table th {
+  background-color: #4e4e4e;
+  height: 60px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+#student-table th:hover {
+  outline: none;
+}
+
+#student-table tr {
+  height: 42px;
+  font-size: 13px;
+}
+
+#student-table tr:hover {
+  background-color: #e6e6e6;
+}
+
+#student-table td {
+  border: none;
+}

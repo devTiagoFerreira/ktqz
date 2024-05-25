@@ -1,0 +1,67 @@
+.presence-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+}
+
+#presence-modal {
+  position: absolute;
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+#presence-datepicker {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: solid 1px #c5c5c5;
+  color: #757575;
+  margin-left: 8px;
+}
+
+#presence-datepicker:focus {
+  outline: none;
+}
+
+.close-button {
+  border: none;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #5a5a5a;
+}
+
+.button_area {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.presence-list {
+  margin: 30px 0;
+}
+
+.presence-list tr {
+  border-radius: 10px;
+}
+
+.presence-list td {
+  padding: 6px 8px;
+}
+
+.presence-check {
+ cursor: pointer;
+}
+
+

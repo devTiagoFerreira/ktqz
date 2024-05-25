@@ -1,0 +1,114 @@
+.card-box {
+  width: 30%;
+  align-items: flex-start;
+  padding: 30px 0;
+}
+
+.card-body {
+  margin: 0 15px 30px;
+  overflow: hidden;
+  border-radius: 28px;
+  box-shadow: 5px 5px 10px #0c0c0c2d;
+}
+
+.card {
+  text-decoration: none;
+  display: block;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.card:hover,
+.card:hover .card-title,
+.card:hover .card-date {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.card:hover .card-bg {
+  transform: scale(10);
+}
+
+.card-title {
+  min-height: 87px;
+  margin: 0 0 25px;
+  overflow: hidden;
+  font-size: 30px;
+  font-weight: bold;
+  color: #bf3636;
+  z-index: 2;
+  position: relative;
+}
+
+.card-date-box {
+  font-size: 18px;
+  color: #ffffff;
+  z-index: 2;
+  position: relative;
+}
+
+.card-date {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: #bf3636;
+  transition: color .5s ease
+}
+
+.card-bg {
+  height: 128px;
+  width: 128px;
+  background-color: #bf3636;
+  background: linear-gradient(90deg, #bf3636 30%, #270000 100%);
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  transition: all .5s ease;
+}
+
+@media only screen and (max-width: 1225px) {
+  .card-container {
+    width: 100%;
+  }
+
+  .card-box {
+    min-width: 250px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .card-box {
+    width: 100%;
+  }
+
+  .card-title {
+    min-height: 72px;
+    line-height: 1;
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 22px 40px;
+  }
+
+  .card-date-box {
+    font-size: 16px;
+  }
+}
