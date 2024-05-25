@@ -10,37 +10,42 @@
 @import url('./components/header.css');
 @import url('./components/card.css');
 @import url('./components/student-list.css');
+@import url('./components/add-class-modal.css');
 @import url('./components/presence-modal.css');
 
 .green-button {
   padding: 7px 13px;
   background-color: #3fbf36;
-  border: solid 1px  #ffffff;
-  border-radius: 3px;  
+  border: solid 1px #ffffff;
+  border-radius: 3px;
   cursor: pointer;
   color: #ffffff;
   transition: 0.1s;
 }
 
-.green-button:hover  {
+.green-button:hover {
   background-color: #ffffff;
-  border: solid 1px  #3fbf36;
+  border: solid 1px #3fbf36;
   color: #3fbf36;
 }
 
 .red-button {
   padding: 7px 13px;
   background-color: #bf3636;
-  border: solid 1px  #ffffff;
-  border-radius: 3px;  
+  border: solid 1px #ffffff;
+  border-radius: 3px;
   cursor: pointer;
   color: #ffffff;
   transition: 0.1s;
 }
 
-.red-button:hover  {
+.red-button:hover {
   background-color: #ffffff;
-  border: solid 1px  #bf3636;
+  border: solid 1px #bf3636;
   color: #bf3636;
 }
 
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

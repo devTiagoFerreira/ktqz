@@ -6,6 +6,27 @@
   margin: 0 auto;
 }
 
+.add-class-buttom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  padding: 0 !important;
+  bottom: 40px;
+  border: none;
+  border-radius: 50% !important;
+  font-size: 100px;
+  cursor: pointer;
+  color: #bf3636;
+  transition: 0.2s;
+}
+
+.add-class-buttom:hover {
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 1225px) {
   .card-container {
     width: 100%;

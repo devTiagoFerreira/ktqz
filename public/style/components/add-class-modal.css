@@ -1,4 +1,4 @@
-.presence-container {
+.add-class-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,24 +7,31 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   top: 0;
+  z-index: 20;
 }
 
-#presence-modal {
+#add-class-modal {
   position: absolute;
   padding: 30px;
   background-color: #FFFFFF;
   border-radius: 10px;
 }
 
-#presence-datepicker {
-  padding: 5px 10px;
+
+.add-class-form {
+  margin: 20px 0;
+}
+
+.add-class-form input {
+  padding: 0 10px;
+  margin: 0 10px;
+  height: 30px;
   border-radius: 3px;
   border: solid 1px #c5c5c5;
   color: #757575;
-  margin-left: 8px;
 }
 
-#presence-datepicker:focus {
+.add-class-form input:focus {
   outline: none;
 }
 
@@ -46,20 +53,4 @@
   display: flex;
   justify-content: center;
   width: 100%;
-}
-
-.presence-list {
-  margin: 30px 0;
-}
-
-.presence-list tr {
-  border-radius: 10px;
-}
-
-.presence-list td {
-  padding: 6px 8px;
-}
-
-.presence-check {
-  cursor: pointer;
 }

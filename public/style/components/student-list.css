@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 
-#student-table_wrapper .dt-search  {
+#student-table_wrapper .dt-search {
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
