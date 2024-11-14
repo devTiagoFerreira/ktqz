@@ -1,4 +1,5 @@
 import { createClassCardPage } from '../pages/class-card.js';
+import { createStudentPage } from '../pages/student.js'
 
 export function createHeader() {
     const header = $('<header>');
@@ -13,7 +14,7 @@ export function createHeader() {
 function createNavBar() {
     const item_list = [
         { item: 'class', text: 'Turma', icon: 'fa-solid fa-house-user' },
-        { item: 'student', text: 'Catequisando', icon: 'fa-regular fa-id-card' },
+        { item: 'student', text: 'Catequizando', icon: 'fa-regular fa-id-card' },
     ];
 
     const nav = $('<nav>');
@@ -35,5 +36,8 @@ function createNavBar() {
 export function setNavEvents() {
     $('#class-item').on('click', async () => {
         await createClassCardPage();
+    });
+    $('#student-item').on('click', async () => {
+        await createStudentPage();
     });
 }

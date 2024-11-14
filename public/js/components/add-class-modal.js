@@ -5,7 +5,7 @@ export function createAddClassModal() {
     const add_class_modal = $('<div>').attr('id', 'add-class-modal');
 
     const form = $('<form>').addClass('add-class-form');
-    const input_class_name = $('<input>').attr('type', 'text').attr('id', 'input_class_name');
+    const input_class_name = $('<input>').attr('type', 'text').attr('id', 'input_class_name').attr('placeholder', 'Nome');
     const input_class_date = $('<input>').attr('type', 'number').attr('id', 'input_class_date');
     input_class_date.attr('min', '1900').attr('max', '2100').attr('step', '1');
     const close_icon = $('<i>').addClass('fa-solid fa-circle-xmark');

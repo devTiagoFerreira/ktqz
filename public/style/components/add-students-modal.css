@@ -1,0 +1,119 @@
+.add-student-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000099;
+  top: 0;
+  z-index: 20;
+}
+
+#add-student-modal {
+  position: absolute;
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.add-student-form label {
+  font-size: 14px;
+}
+
+.add-student-form input {
+  padding: 0 10px !important;
+  margin: 0 8px !important;
+  height: 34px !important;
+  border-radius: 3px !important;
+  border: solid 1px #c5c5c5 !important;
+  color: #757575 !important;
+}
+
+.add-student-form input:focus {
+  outline: none;
+}
+
+.close-button {
+  border: none;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #5a5a5a;
+}
+
+#add-student-table_wrapper input[type="search"]:focus {
+  outline: none;
+}
+
+#add-student-table_wrapper input[type="search"] {
+  width: 30%;
+}
+
+#add-student-table_wrapper input[type="search"]::-webkit-search-cancel-button {
+  background-image: url('../../assets/icons/close.svg');
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+#add-student-table_wrapper .dt-search {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#add-student-table {
+  margin-bottom: 15px;
+  min-width: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#add-student-table th {
+  background-color: #4e4e4e;
+  height: 40px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+#add-student-table th:hover {
+  outline: none;
+}
+
+#add-student-table tr {
+  height: 35px;
+  font-size: 13px;
+}
+
+#add-student-table tr:hover {
+  background-color: #e6e6e6;
+}
+
+#add-student-table td {
+  border: none;
+}
+
+
+#add-student-table tr td:first-child {
+  text-align: center;
+}
+
+#add-student-table .add-student-check {
+  cursor: pointer;
+}
+
+.button_area {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

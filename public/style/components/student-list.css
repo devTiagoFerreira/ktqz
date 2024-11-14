@@ -22,6 +22,17 @@
   justify-content: space-between;
 }
 
+
+#student-table_wrapper .dt-search .button_area {
+  display: flex;
+  justify-content: end;
+}
+
+#student-table_wrapper .dt-search .button_area button{
+ margin: 0 10px;
+}
+
+
 #student-table {
   margin-top: 5px;
   border-radius: 10px;
