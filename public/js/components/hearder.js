@@ -1,5 +1,10 @@
 import { createClassCardPage } from '../pages/class-card.js';
-import { createStudentPage } from '../pages/student.js'
+import { createStudentPage } from '../pages/student.js';
+
+const NAV_ITEMS = [
+    { id: 'class-item', item: 'class', text: 'Turma', action: createClassCardPage },
+    { id: 'student-item', item: 'student', text: 'Catequizando', action: createStudentPage },
+];
 
 export function createHeader() {
     const header = $('<header>');
@@ -12,32 +17,25 @@ export function createHeader() {
 }
 
 function createNavBar() {
-    const item_list = [
-        { item: 'class', text: 'Turma', icon: 'fa-solid fa-house-user' },
-        { item: 'student', text: 'Catequizando', icon: 'fa-regular fa-id-card' },
-    ];
-
     const nav = $('<nav>');
     const ul = $('<ul>');
 
-    for (const { item, text, icon } of item_list) {
-        const li = $('<li>').attr('id', `${item}-item`);
-        const i = $('<i>').addClass(icon);
+    NAV_ITEMS.forEach(({ id, text, icon }) => {
+        const li = $('<li>').attr('id', id);
         const span = $('<span>').text(text);
 
-        li.append(i, span);
+        li.append(span);
         ul.append(li);
-    }
+    });
 
     nav.append(ul);
     return nav;
 }
 
 export function setNavEvents() {
-    $('#class-item').on('click', async () => {
-        await createClassCardPage();
-    });
-    $('#student-item').on('click', async () => {
-        await createStudentPage();
+    NAV_ITEMS.forEach(({ id, action }) => {
+        $(`#${id}`).on('click', async () => {
+            await action();
+        });
     });
 }
