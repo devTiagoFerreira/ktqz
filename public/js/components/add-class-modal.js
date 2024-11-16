@@ -1,4 +1,4 @@
-import { createClassCardPage } from '../pages/class-card.js';
+import { createClassCardPage } from '../pages/class.js';
 
 export function createAddClassModal() {
     const add_class_container = $('<div>').addClass('add-class-container');

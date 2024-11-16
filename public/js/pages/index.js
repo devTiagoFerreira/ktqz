@@ -1,5 +1,5 @@
 import { createHeader, setNavEvents } from '../components/hearder.js';
-import { createClassCardPage } from './class-card.js';
+import { createClassCardPage } from './class.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     createMainContainer();

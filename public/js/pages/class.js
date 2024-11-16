@@ -7,9 +7,9 @@ export async function createClassCardPage() {
     section.html('');
 
     const class_list = [
-        { class_id: 1, class_name: 'Jovens', class_year: '2024' },
-        { class_id: 2, class_name: 'Adultos', class_year: '2024' },
-        { class_id: 3, class_name: 'Idosos', class_year: '2024' },
+        { class_id: 1, class_name: 'Jovens', class_year: '2024', class_teacher: 'Marcos' },
+        { class_id: 2, class_name: 'Adultos', class_year: '2024', class_teacher: 'Rosalinda' },
+        { class_id: 3, class_name: 'Idosos', class_year: '2024', class_teacher: 'Lis'  },
     ];
 
     const card_container = $('<div>').addClass('card-container');
@@ -23,9 +23,9 @@ export async function createClassCardPage() {
     }
 
     add_class_button.append(plus_icon);
-    card_container.append(add_class_button);
+    // card_container.append(add_class_button);
 
-    section.append(card_container);
+    section.append(card_container, add_class_button);
 
     add_class_button.on('click', async () => {
         const add_class_modal = createAddClassModal();

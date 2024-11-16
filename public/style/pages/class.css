@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -10,21 +10,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  width: 100px;
-  height: 100px;
+  margin-bottom: 40px;
+  width: 80px;
+  height: 80px;
   padding: 0 !important;
-  bottom: 40px;
   border: none;
   border-radius: 50% !important;
-  font-size: 100px;
   cursor: pointer;
-  color: #bf3636;
-  transition: 0.2s;
+  background-color: #ee8282;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.18);
+  transition: 0.5s;
+}
+
+.add-class-buttom i{
+  font-size: 82px;
+  color: #a52a2a;
+  transition: 0.5s;
 }
 
 .add-class-buttom:hover {
   transform: scale(1.1);
+}
+
+.add-class-buttom:hover i{
+  color: #bf3636;
 }
 
 @media only screen and (max-width: 1225px) {

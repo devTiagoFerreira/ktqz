@@ -1,9 +1,9 @@
-import { createClassCardPage } from '../pages/class-card.js';
+import { createClassCardPage } from '../pages/class.js';
 import { createStudentPage } from '../pages/student.js';
 
 const NAV_ITEMS = [
-    { id: 'class-item', item: 'class', text: 'Turma', action: createClassCardPage },
-    { id: 'student-item', item: 'student', text: 'Catequizando', action: createStudentPage },
+    { id: 'class-item', item: 'class', text: 'Turmas', action: createClassCardPage },
+    { id: 'student-item', item: 'student', text: 'Catequizandos', action: createStudentPage },
 ];
 
 export function createHeader() {

@@ -31,16 +31,11 @@ nav ul li {
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
-   width: 12%;
    min-width: 100px;
 
-   font-family: "Spectral SC", serif;
-   font-size: 20px;
-   font-weight: 200;
-   font-style: normal;
    color: #ffffff;
 
-   transition: text-shadow 0.2s;
+   transition: text-shadow 0.5s;
 }
 
 nav ul li:hover {
